@@ -8,15 +8,14 @@ Finally, docker copies everything in src/ inside this repository to the /var/www
 
 # Setup
 
- - Ensure you have Docker installed
  - `git clone` this repository
  - `sudo docker build -t veriassesment .` 
 
  - Testing with CLI: Run docker command in interactiv mode:
- - `sudo docker run -it veriassesment bash`
- - Then execute:
- - `php index.php`
+   `sudo docker run -it veriassesment bash`
+   Then execute:
+   `php index.php`
 
  - Testing with browser: Run docker command:
- - `sudo docker run -p 80:80 veriassesment`
- - Then open browser on localhost:80
+   `sudo docker run -p 80:80 veriassesment`
+   Then open browser on localhost:80
