@@ -57,8 +57,8 @@ function calcul_age ($dateOfBirth) {
 function calcul_distance ($from, $to) {
     list($from_x, $from_y) = split_tuple($from);
     list($to_x, $to_y) = split_tuple($to);
-    // floor() => Returns the next LOWEST integer value
-    // exemple: if calculated distance = 4.99 (km) the function will return 4 (km)
+    // floor() => Returns the next LOWEST integer value.
+    // exemple: if calculated distance = 4.99 (km) the function will return 4 (km).
     return floor(sqrt(pow(($from_x - $to_x), 2) + pow(($from_y - $to_y), 2)));
 }
 
