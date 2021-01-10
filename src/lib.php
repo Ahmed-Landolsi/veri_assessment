@@ -125,7 +125,8 @@ function calcul_distance_payout ($distance) {
 function build_table($array){
     $html = '<table>';
     $html .= '<tr>';
-    $properties = get_object_vars ($array[1]);
+    $firstvalue = reset($array);
+    $properties = get_object_vars ($firstvalue);
     foreach($properties as $key=>$value){
         $html .= '<th>' . htmlspecialchars($key) . '</th>';
     }
